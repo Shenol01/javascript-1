@@ -1,0 +1,54 @@
+#show-container {
+  text-align: center;
+  padding: 30px;
+}
+
+#show-container img {
+  width: 260px;
+  border-radius: 10px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin: 20px 0 10px 40px;
+  font-size: 24px;
+}
+
+#episodes-grid,
+#cast-grid {
+  display: grid;
+  padding: 10px 40px;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.episode-card,
+.cast-card {
+  background: #1b1b1b;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.cast-card img {
+  width: 100%;
+  border-radius: 8px 8px;
+  margin-bottom: 10px;
+}
+
+.episode-card:hover,
+.cast-card:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
+
+.episode-card {
+  overflow: hidden;
+}
+
+.episode-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}

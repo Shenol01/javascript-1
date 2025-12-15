@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Shows</title>
+    <link rel="stylesheet" href="favorites.css?v=1.2" />
+    <link rel="stylesheet" href="style.css?v=1.2" />
+    <script src="constants.js" defer></script>
+    <script src="favorites.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <h1 class="logo">TV Explorer</h1>
+        <a href="index.html">Shows</a>
+        <a href="favorites.html" class="active">Favorites</a>
+      </div>
+
+      <div class="nav-right">
+        <div id="userBubble"></div>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+    </nav>
+
+    <h2 class="page-title">Your Favorite Shows</h2>
+
+    <div id="favorites-container" class="grid"></div>
+  </body>
+</html>
