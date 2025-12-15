@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Books Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>My Books Library</h1>
+    <button id="darkModeButton">Dark Mode</button>
+  </header>
+
+  <div class="giant-container">
+    <aside class="aside">
+      <h2>Add Book</h2>
+
+      <label>Title</label>
+      <input type="text" id="title" />
+
+      <label>Author</label>
+      <input type="text" id="author" />
+
+      <label>Category</label>
+      <input type="text" id="category" />
+
+      <button onclick="addBook()">Add</button>
+    </aside>
+
+    <main class="main">
+      <table>
+        <thead>
+          <tr>
+            <th id="title-header">Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody id="main-table"></tbody>
+      </table>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
